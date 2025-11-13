@@ -8,7 +8,7 @@ A web application to view posts from [JSONPlaceholder](https://jsonplaceholder.t
 - Select posts and save them to a backend database.
 - View all saved posts.
 - Delete saved posts.
-- Responsive and clean UI suitable for both light and dark themes.
+- Responsive and clean UI.
 
 ## Tech Stack
 
@@ -90,11 +90,11 @@ npm run dev
 
 ## API Endpoints (Backend)
 
-| Method | Endpoint    | Description             |
-| ------ | ----------- | ----------------------- |
-| GET    | `/save`     | Fetch all saved posts   |
-| POST   | `/save`     | Save a post to database |
-| DELETE | `/save/:id` | Delete a post by ID     |
+| Method | Endpoint    | Description            |
+| ------ | ----------- | ---------------------- |
+| GET    | `/save`     | Fetch all saved posts  |
+| POST   | `/save`     | Save posts to database |
+| DELETE | `/save/:id` | Delete a post by ID    |
 
 ## Notes
 
