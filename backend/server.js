@@ -1,4 +1,3 @@
-// server.js
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -57,13 +56,6 @@ app.get("/save", (req, res) => {
     res.json(rows);
   });
 });
-
-// // Delete a saved post by ID
-// app.delete("/save/:id", (req, res) => {
-//   const postId = parseInt(req.params.id);
-//   savedPosts = savedPosts.filter((p) => p.id !== postId);
-//   res.json({ message: `Post with ID ${postId} deleted.` });
-// });
 
 // Delete a saved post by ID
 app.delete("/save/:id", (req, res) => {

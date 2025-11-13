@@ -48,6 +48,8 @@ function App() {
 
   // inside App component
 const handleDeleteSavedPost = async (id) => {
+  const confirmed = window.confirm("Are you sure you want to delete this post?");
+  if (!confirmed) return; // stop if user cancels
   try {
     await deletePostFromBackend(id);
     loadSavedPosts(); // refresh the saved posts list
